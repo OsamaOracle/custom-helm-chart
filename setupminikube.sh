@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install helm
 mkdir tmp && cd tmp
 git clone https://github.com/OsamaOracle/custom-helm-chart.git
-cd sample-app-helm
+cd custom-helm-chart
 minikube addons enable ingress
 sleep 60
 helm upgrade --install freshcells ./freshcells  -f freshcells/values.yaml --debug
